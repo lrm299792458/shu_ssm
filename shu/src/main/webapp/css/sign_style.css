@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: #fff url(../images/background.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.dowebok {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    width: 430px;
+    height: 650px;
+    margin: -390px 0 0 -215px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.logo {
+    position: relative;
+    width: 430px;
+    height: 170px;
+    margin: 0 0 10px 0;
+}
+
+.logo img {
+    position: absolute;
+    width: 83%;
+    height: 185%;
+    top: -77px;
+    left: 30px;
+}
+
+.choice {
+    position: relative;
+    width: 360px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.choice select {
+    width: 320px;
+    height: 33px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    margin-left: 18px;
+}
+
+.choice select option {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.form-item {
+    position: relative;
+    width: 360px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.denglu,
+.mima {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    line-height: 37px;
+    left: 47px;
+}
+
+.form-item input {
+    width: 250px;
+    height: 33px;
+    padding-left: 70px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    margin-left:18px;
+}
+
+.form-item button {
+    width: 324px;
+    height: 50px;
+    margin-left: 18px;
+    border: 0;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #1f6f4a;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.type input {
+    margin-right: 5px;
+}
+
+.tip {
+    display: none;
+    position: absolute;
+    left: 20px;
+    top: 52px;
+    font-size: 14px;
+    color: #f50;
+}
+
+.dowebok ::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.dowebok :-moz-placeholder {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.dowebok ::-moz-placeholder {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.dowebok :-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    * {
+        box-sizing: border-box;
+    }
+    .dowebok {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0 30px;
+        border: 0;
+        border-radius: 0;
+    }
+    .logo {
+        margin: 50px auto;
+    }
+    .form-item {
+        width: auto;
+    }
+    .form-item input,
+    .form-item button,
+    .reg-bar {
+        width: 100%;
+    }
+}

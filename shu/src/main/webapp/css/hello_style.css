@@ -1,0 +1,189 @@
+* {
+    /* 取消内外边距 */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+
+.navbar {
+    /* 父盒子 相对定位 */
+    position: relative;
+    /* 窗口宽度100% */
+    width: 100vw;
+}
+
+#checkbox {
+    display: none;
+}
+
+.navbar label {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 100%;
+    height: 43px;
+    font-size: 30px;
+    color: #5a738e;
+    background-color: #ededed;
+    padding-left: 20px;
+    border: 1px solid #d9dee4;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.navbar ul {
+    list-style: none;
+    width: 80px;
+    height: 100vh;
+    background-color: #2a3f54;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.navbar ul li :first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.navbar ul li .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.navbar ul :first-child li {
+    color: #fff;
+    /* 文字不换行 */
+    white-space: nowrap;
+    padding-left: 10px;
+    display: none;
+    line-height: 50px;
+}
+
+.navbar ul li .fc {
+    color: #fff;
+    /* 文字不换行 */
+    white-space: nowrap;
+    padding-left: 10px;
+    display: none;
+    line-height: 50px;
+}
+
+.navbar ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 垂直排列 */
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.navbar ul li a span:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar ul li a i:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar ul li a i {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.navbar ul li a span {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.navbar ul li a :hover {
+    color: #fff;
+    background-color: #35495d;
+}
+
+.navbar input:checked+label {
+    left: 200px;
+}
+
+.navbar input:checked~ul {
+    width: 200px;
+}
+
+.navbar input:checked~ul li:first-child {
+    justify-content: flex-start;
+}
+
+.navbar input:checked~ul li:first-child span {
+    display: block;
+}
+
+.navbar input:checked~ul li a {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navbar input:checked~ul li a i {
+    font-size: 18px;
+    margin: 0 15px 0 30px;
+}
+
+.navbar input:checked~ul li a span {
+    font-size: 14px;
+}
+
+.navbar .info {
+    position: absolute;
+    top: 45px;
+    left: 80px;
+    height: 100vh;
+    width: 100vw;
+    transition: all 0.5s;
+}
+
+.navbar input:checked~div {
+    left: 200px;
+    transition: all 0.5s;
+}
+
+.navbar .info span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 300%;
+}
+
+.navbar .info .gongao {
+    width: 100%;
+    height: 50%;
+    background-color: skyblue;
+}
+
+.navbar .info .zon {
+    background-color: green;
+    height: 30%;
+}
+
+.navbar .info .else {
+    background-color: rgb(236, 77, 77);
+    height: 20%;
+}
